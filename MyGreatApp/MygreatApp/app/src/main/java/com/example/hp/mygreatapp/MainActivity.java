@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         EditText pass=(EditText) findViewById(R.id.editTextPassword);
         Log.i("Info",   "Button Pressed");
         Log.i("Values",name.getText().toString());
+        Toast.makeText(this, "Hi "+name.getText().toString()+"!!", Toast.LENGTH_SHORT).show();
         Log.i("Values",pass.getText().toString());
     }
 
