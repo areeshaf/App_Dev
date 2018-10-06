@@ -19,6 +19,14 @@ public class MainActivity extends AppCompatActivity {
         String amountd=String.format("%.2f",amount);
         Toast.makeText(this, "$"+et.getText().toString()+" is equal to Rps."+amountd, Toast.LENGTH_LONG).show();
     }
+    public void clickFun(View v){
+        EditText et=(EditText)findViewById(R.id.editText4);
+        String amts=et.getText().toString();
+        Double amtd=Double.parseDouble(amts);
+        Double amnt=amtd/73.77;
+        String amnts=String.format("%.2f",amnt);
+        Toast.makeText(this, "Rps. "+amts+" is equal to $"+amnts, Toast.LENGTH_LONG).show();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
